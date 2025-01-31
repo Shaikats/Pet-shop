@@ -11,10 +11,47 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
     <title>Pet Shop</title>
+    <style>
+
+        /* Google Fonts Family */
+.font-adam-display {
+  font-family: "ADLaM Display", serif;
+}
+        .section-max-width {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+/* banner styles */
+#banner {
+  background-image: url("./assets/cat-big.png");
+  background-repeat: no-repeat;
+  background-position: bottom 0 right 0;
+  background-size: 100%;
+}
+
+/* Responsive Media Query */
+@media screen and (max-width: 576px) {
+  /* media for navbar */
+  nav {
+    padding: 0 1rem;
+    border-bottom: 2px solid #7a7a7a;
+  }
+  #brand,
+  #nav-links {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  #banner-description {
+    padding-right: 48rem;
+  }}
+    </style>
 </head>
 
+
 <!-- Navbar -->
-    <nav class="lg:px-20 flex justify-between items-center p-5 bg-yellow-50">
+    <nav class="lg:px-30 flex justify-between items-center p-5 bg-yellow-50">
         <div class="flex items-center space-x-3">
             <img src="assets/logo-header.png" alt="">
             <span class="text-xl">Browse<span class="text-yellow-500">4</span>Pets</span>   
@@ -39,6 +76,34 @@
          </div>
     </nav>
 
+     <!-- banner section -->
+     <section id="banner" class="pt-20 section-max-width mt-8 lg:mt-16 px-4 lg:px-0 h-96 lg:h-lvh">
+        <!-- banner content -->
+        <div class="space-y-4">
+            <h1 class="font-adam-display text-3xl lg:text-5xl text-[#111111]">
+                Pamper Your Pet, <br> Because They Deserve <br> the Bes
+            </h1>
+            <p id="banner-description" class=" lg:text-xl text-gray-600">
+                Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and
+                make tails wag with joy!
+            </p>
+            <button class="bg-[#FFDC26] text-base lg:text-xl rounded-lg py-2 px-9">Find a pet</button>
+        </div>
+    </section>
+</header>
+
+     <!-- Categories Section -->
+      <section class="px-30 pt-20 pb-20">
+        <h2 class="text-4xl font-bold text-left">Browse By Categories</h2>
+        <div class="grid grid-cols-2 md:grid-cols-6 gap-4 mt-6">
+            <div class="p-4 bg-yellow-200 rounded-lg text-center">Dog</div>
+            <div class="p-4 bg-yellow-200 rounded-lg text-center">Fish</div>
+            <div class="p-4 bg-yellow-200 rounded-lg text-center">Cat</div>
+            <div class="p-4 bg-yellow-200 rounded-lg text-center">Birds</div>
+            <div class="p-4 bg-yellow-200 rounded-lg text-center">Small Pet</div>
+            <div class="p-4 bg-yellow-200 rounded-lg text-center">Rabbit</div>
+        </div>
+      </section>
 <body>
     
 </body>
