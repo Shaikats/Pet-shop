@@ -15,7 +15,7 @@ This is a simple, responsive pet shop website designed with HTML, CSS, and Tailw
 - **HTML**: For structuring the content.
 - **CSS**: For styling and layout.
 - **Tailwind CSS**: For utility-first CSS framework, ensuring responsive and consistent design.
-- **Font Awesome**: For icons (star rating).
+- **Font Awesome**: For icons.
 
 ## Installation
 
